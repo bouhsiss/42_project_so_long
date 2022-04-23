@@ -3,10 +3,10 @@ NAME = so_long
 CC = gcc
 LIB = libft.a
 LIB_DIR = libft/
-MLX_FLAGS = -lmlx -framework OpenGL -framework AppKit -fsanitize=address
+MLX_FLAGS = -lmlx -framework OpenGL -framework AppKit -g3 -fsanitize=address
 CFLAGS = -Wall -Wextra -Werror -g
 
-SRCS = so_long.c
+SRCS = move_player.c so_long.c checker.c draw_tools.c executer.c extra_tools.c parser.c
 SRCS_OBJS = ${SRCS:.c=.o}
 
 # BONUS_NAME = 
