@@ -6,7 +6,7 @@
 /*   By: hbouhsis <hbouhsis@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 23:58:28 by hbouhsis          #+#    #+#             */
-/*   Updated: 2022/04/25 02:07:22 by hbouhsis         ###   ########.fr       */
+/*   Updated: 2022/04/26 02:05:19 by hbouhsis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,20 +59,20 @@ void	flags_check(char **map, int lines)
 		error_message("Error : map_not_valid");
 }
 
-void char_checker(char **map)
+void	char_checker(char **map)
 {
-	int	i;
-	int	j;
-	char c;
+	int		i;
+	int		j;
+	char	c;
 
 	i = 0;
 	while (map[i])
 	{
 		j = 0;
-		while(map[i][j])
+		while (map[i][j])
 		{
 			c = map[i][j];
-			if(c != '1' && c != '0' && c != 'E' && c != 'P' && c != 'C')
+			if (c != '1' && c != '0' && c != 'E' && c != 'P' && c != 'C')
 			{
 				error_message("Error : character not valid");
 			}
@@ -80,7 +80,6 @@ void char_checker(char **map)
 		}
 		i++;
 	}
-	
 }
 
 void	is_map_valid(char **map, int lines)

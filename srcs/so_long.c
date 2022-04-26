@@ -6,7 +6,7 @@
 /*   By: hbouhsis <hbouhsis@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 23:59:32 by hbouhsis          #+#    #+#             */
-/*   Updated: 2022/04/26 01:08:34 by hbouhsis         ###   ########.fr       */
+/*   Updated: 2022/04/26 01:27:27 by hbouhsis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ int	main(int ac, char **av)
 	{
 		error_message("Usage : ./so_long < .ber map file>");
 	}
-	system("leaks ./so_long");
 }

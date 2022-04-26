@@ -6,7 +6,7 @@
 /*   By: hbouhsis <hbouhsis@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 23:59:16 by hbouhsis          #+#    #+#             */
-/*   Updated: 2022/04/24 01:30:54 by hbouhsis         ###   ########.fr       */
+/*   Updated: 2022/04/26 01:42:55 by hbouhsis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,6 @@ char	**parser(char *file, t_vars *data)
 	map = ft_split(p, '\n');
 	is_map_valid(map, data->win.lines);
 	free(p);
+	close(fd);
 	return (map);
 }

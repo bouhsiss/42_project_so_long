@@ -6,7 +6,7 @@
 /*   By: hbouhsis <hbouhsis@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 00:56:23 by hbouhsis          #+#    #+#             */
-/*   Updated: 2022/04/19 03:33:39 by hbouhsis         ###   ########.fr       */
+/*   Updated: 2022/04/26 01:33:01 by hbouhsis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	ft_strcpy(str, c1);
 	ft_strcat(str, c2);
+	free(c1);
 	return (str);
 }

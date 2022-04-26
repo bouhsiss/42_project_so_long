@@ -6,7 +6,7 @@
 /*   By: hbouhsis <hbouhsis@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 23:59:09 by hbouhsis          #+#    #+#             */
-/*   Updated: 2022/04/25 03:57:07 by hbouhsis         ###   ########.fr       */
+/*   Updated: 2022/04/26 02:06:12 by hbouhsis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 void	move_down(t_vars *data)
 {
-	char tile;
+	char	tile;
 
 	tile = data->map_arr[data->pos_y + 1][data->pos_x];
-	if (tile != '1' &&
-		tile != 'E')
+	if (tile != '1' && tile != 'E')
 	{
 		if (tile == 'C')
 		{
@@ -41,7 +40,7 @@ void	move_down(t_vars *data)
 
 void	move_left(t_vars *data)
 {
-	char tile;
+	char	tile;
 
 	tile = data->map_arr[data->pos_y][data->pos_x + 1];
 	if (tile != '1' && tile != 'E')
@@ -67,7 +66,7 @@ void	move_left(t_vars *data)
 
 void	move_up(t_vars *data)
 {
-	char tile;
+	char	tile;
 
 	tile = data->map_arr[data->pos_y - 1][data->pos_x];
 	if (tile != '1' && tile != 'E')
@@ -93,7 +92,7 @@ void	move_up(t_vars *data)
 
 void	move_right(t_vars *data)
 {
-	char tile;
+	char	tile;
 
 	tile = data->map_arr[data->pos_y][data->pos_x - 1];
 	if (tile != '1' && tile != 'E')
@@ -129,7 +128,7 @@ int	move_player(int key, t_vars *data)
 		move_up(data);
 	if (key == RIGHT_KEY || key == 123)
 		move_right(data);
-		if (key != 53)
+	if (key != 53)
 	{
 		ft_putnbr_fd(data->move_count, 1);
 		ft_putendl_fd(" moves, go on champ !!", 1);
