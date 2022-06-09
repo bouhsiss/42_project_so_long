@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long_bonus.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbouhsis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hbouhsis <hbouhsis@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 02:07:05 by hbouhsis          #+#    #+#             */
-/*   Updated: 2022/04/26 02:07:07 by hbouhsis         ###   ########.fr       */
+/*   Updated: 2022/04/26 02:23:13 by hbouhsis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,7 @@ char	**parser(char *file, t_vars *data);
 int		move_player(int key, t_vars *data);
 int		close_win(t_vars *data);
 void	display_moves_in_win(t_vars *data);
+void	lose_or_win(char tile, t_vars *data);
+void	display_moves(t_vars *data);
 
 #endif

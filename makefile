@@ -27,12 +27,12 @@ $(LIB) :
 	make -C $(LIB_DIR) --silent
 	cp libft/$(LIB) ./
 
-$(NAME) : $(LIB) $(SRCS)
+$(NAME) : $(LIB)
 	$(CC) $(CFLAGS) $(MLX_FLAGS) $(SRCS) $(LIB) -o $(NAME)
 	@echo "\n====== $(NAME) compiling finished ======"
 	@echo "==========================================${NC}\n"
 
-bonus : $(LIB) $(BONUS)
+bonus : $(LIB)
 	@echo "${MAGENTA}====================================="
 	$(CC) $(CFLAGS) $(MLX_FLAGS) $(BONUS) $(LIB) -o $(BONUS_NAME)
 	@echo "\n====== $(BONUS_NAME) compiling finished ======"
@@ -42,7 +42,7 @@ bonus : $(LIB) $(BONUS)
 
 clean :
 	@echo "${RED}====================================="
-	rm -f *.o
+	make fclean -C $(LIB_DIR) --silent
 	@echo "====== object files removed ======"
 	@echo "===================================${NC}\n"
 
@@ -50,7 +50,6 @@ fclean : clean
 	@echo "${YELLOW}====================================="
 	rm -f $(NAME) $(BONUS_NAME)
 	rm -f $(LIB)
-	make fclean -C $(LIB_DIR) --silent
 	rm -rf $(NAME).dSYM
 	rm -rf $(BONUS_NAME).dSYM
 	@echo "\n====== binary files removed ======="

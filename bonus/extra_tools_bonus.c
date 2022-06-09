@@ -6,7 +6,7 @@
 /*   By: hbouhsis <hbouhsis@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 23:58:51 by hbouhsis          #+#    #+#             */
-/*   Updated: 2022/04/26 02:02:18 by hbouhsis         ###   ########.fr       */
+/*   Updated: 2022/04/26 02:25:08 by hbouhsis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,5 @@ int	close_win(t_vars *data)
 	}
 	free(data->map_arr);
 	free(data);
-	system("leaks so_long");
 	exit(0);
 }
