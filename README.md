@@ -34,4 +34,6 @@ P for the player’s starting position.<br/>
 • The map must be closed/surrounded by walls. If it’s not, the program must return
 an error.<br/>
 • the program must be able to parse any kind of map, as long as it respects the above rules.<br/>
+<br/>
+<br/>
 ![screenshot of the game](https://github.com/bouhsiss/42_project_so_long/blob/master/maps%20and%20screenshots/Screen%20Shot%202022-06-09%20at%205.44.28%20PM.png)
